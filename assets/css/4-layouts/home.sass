@@ -29,11 +29,14 @@
 .col-1
   max-width: 300px
   margin: 0 10px
+  box-sizing: border-box
+  width: 100%
   // background: pink
 
 .col-2
   max-width: 620px
   margin: 0 10px
+  box-sizing: border-box
   // background: honeydew
 
 .col-50
@@ -61,3 +64,9 @@
 .home-lead
   font-size: 36px
   line-height: 1.1
+
+  &.outdented
+    text-indent: -0.8em
+
+    @media (max-width: 640px)
+      text-indent: 0
