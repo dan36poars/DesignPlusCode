@@ -36,6 +36,11 @@ section.mentoring
     position: relative
     cursor: pointer
 
+    &.back-btn
+      background: white center no-repeat
+      background-size: 15px 26px
+      display: none
+
   .bubble
     opacity: 0
     position: absolute
@@ -55,3 +60,25 @@ section.mentoring
   .face.has-bubble-open .bubble
     opacity: 1
     transform: scale(1)
+
+@media (max-width: 640px)
+  section.mentoring
+
+    .faces
+      margin: 0
+      width: 115px * 7
+      top: 230px
+      left: 0px
+
+    .face
+      display: inline-block
+      margin-right: 35px
+
+      &.back-btn
+        display: inline-block
+
+    .bubble
+      bottom: 100px
+      left: 0px
+      box-sizing: border-box
+      margin-left: 0px
