@@ -1,0 +1,22 @@
+mixin face
+  li.face(style="background-image: url(http://fillmurray.com/80/80);")
+    .bubble
+      p I could've spent hours with Travis peeling back the layers of his experience to understand more about his perspective, his experience, and what a typical day might be like in his field..
+      cite - Nathan Jacobs
+
+section.mentoring
+  .flex.flex--center
+    .col-1
+      ul.faces
+        +face
+        +face
+        li.face.has-bubble-open(style="background-image: url(http://fillmurray.com/80/80);")
+          .bubble
+            p I could've spent hours with Travis peeling back the layers of his experience to understand more about his perspective, his experience, and what a typical day might be like in his field..
+            cite - Nathan Jacobs
+        +face
+        +face
+
+    .col-1
+      p.home-lead.outdented ...Mentoring people like you...
+      a(href="").home-cta Schedule a Call
