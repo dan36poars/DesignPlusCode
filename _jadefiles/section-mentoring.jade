@@ -1,21 +1,19 @@
-mixin face
-  li.face(style="background-image: url(http://fillmurray.com/80/80);")
+mixin face(face, words, name)
+  li.face(style="background-image: url(#{face});")
     .bubble
-      p I could've spent hours with Travis peeling back the layers of his experience to understand more about his perspective, his experience, and what a typical day might be like in his field..
-      cite - Nathan Jacobs
+      p #{words}
+      cite - #{name}
 
 section.mentoring
   .flex.flex--center
     .col-1
       ul.faces
-        +face
-        +face
-        li.face.has-bubble-open(style="background-image: url(http://fillmurray.com/80/80);")
-          .bubble
-            p I could've spent hours with Travis peeling back the layers of his experience to understand more about his perspective, his experience, and what a typical day might be like in his field..
-            cite - Nathan Jacobs
-        +face
-        +face
+        +face("http://fillmurray.com/80/80","Hay","Bill")
+        +face("http://fillmurray.com/80/80","Bye","Vill")
+        +face("http://fillmurray.com/80/80","Ola","Fill")
+        +face("http://fillmurray.com/80/80","Aloha","Mill")
+        +face("http://fillmurray.com/80/80","Hallo","Jill")
+        +face("http://fillmurray.com/80/80","Yo","Till")
 
     .col-1
       p.home-lead.outdented ...Mentoring people like you...
