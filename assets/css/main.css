@@ -1064,6 +1064,15 @@ section.podcast {
   transition: background 150ms ease-in-out; }
   .home-footer a:hover {
     background: #d82121; }
+  @media (max-width: 895px) {
+    .home-footer a {
+      font-size: 50px; } }
+  @media (max-width: 650px) {
+    .home-footer a {
+      font-size: 35px; } }
+  @media (max-width: 450px) {
+    .home-footer a {
+      font-size: 20px; } }
 
 .home-wrap {
   display: -ms-flexbox;
